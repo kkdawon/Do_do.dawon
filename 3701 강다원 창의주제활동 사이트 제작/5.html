@@ -1,0 +1,81 @@
+<!doctype html>
+<html>
+<head>
+  <title>Do-do</title>
+  <meta charset="utf-8">
+  <style>
+  body{
+      margin:0;
+  }
+  #active{
+      color:red;
+  }
+  .saw{
+       color:gray;
+  }
+  a{
+      color:black;
+      text-decoration: none;
+  }
+  h1{
+     front-size:40px;
+     text-align:center;
+     border-bottom:1px solid gray;
+     margin:0;
+     padding:20px
+ }
+  #grid ol{
+     border-right:1px solid gray;
+     width: 100px;
+     margin:0;
+     padding:30px;
+
+ }
+ #gird{
+     display:grid;
+     gird-template-columns:150px 1fr;
+ }
+ #article{
+      padding-left:25px;
+ @media(max-width:800px){
+   #grid{
+      display:block;
+    }
+    #grid ol{
+      border-right:none;
+    }
+    h1{
+      border-bottom:none;
+    }
+ }
+ </style>
+</head>
+
+<body>
+  <input type="button" value="night" onclick="
+      document.querySelector('body').style.backgroundColor = 'seagreen';
+      document.querySelector('body').style.color = 'white';
+    ">
+    <input type="button" value="day" onclick="
+      document.querySelector('body').style.backgroundColor = 'white';
+      document.querySelector('body').style.color = 'black';
+    ">
+  <h1><a href=index.html>Do-do</a></h1>
+  <ol>
+    <li><a href=1.html class="saw">All Shop</a></li>
+    <li><a href=2.html class="saw">Accesory</a></li>
+    <li><a href=3.html class="saw">Donation</a></li>
+    <li><a href=4.html class="saw">Challenge</a></li>
+    <li><a href=5.html class="saw" id="active">My page</a></li>
+  </ol>
+  <h1>MY PAGE</h1>
+  <h3><a href="www.w3.org/TR/html52/" target="_blank" title="HTML5 specification">○ Nickname: ex) 다원이 </a></h3>
+  <h3><a href="www.w3.org/TR/html52/" target="_blank" title="HTML5 specification">○ Level: ex) 3 </a></h3>
+  <h3><a href="555.html">○ 장바구니◀  </a></h3>
+  <h3><a href="www.w3.org/TR/html52/" target="_blank" title="HTML5 specification">○ 현재 총 기부액:</a></h3>
+  <h3><a href="www.w3.org/TR/html52/" target="_blank" title="HTML5 specification">○ 기부 단체 목록: </a></h3>
+  <h3><a href="www.w3.org/TR/html52/" target="_blank" title="HTML5 specification">○ 현재 '감사'포인트 누적: </a></h3></p>
+  (너무 하찮은 창이지만 능력 범위 내에서 개인 홈을 구현해보고자 하였습니다~!)
+</p> -제작자: 3701 강다원
+</body>
+</html>

@@ -1,0 +1,106 @@
+<!doctype html>
+<html>
+<head>
+  <title>Do-do</title>
+  <meta charset="utf-8">
+  <style>
+  body{
+      margin:0;
+  }
+  #active{
+      color:red;
+  }
+  .saw{
+       color:gray;
+  }
+  a{
+      color:black;
+      text-decoration: none;
+  }
+  h1{
+     front-size:40px;
+     text-align:center;
+     border-bottom:1px solid gray;
+     margin:0;
+     padding:20px
+ }
+ p{
+   text-align: center;
+ }
+ h3{
+   text-align: center;
+ }
+  #grid ol{
+     border-right:1px solid gray;
+     width: 100px;
+     margin:0;
+     padding:30px;
+
+ }
+ #gird{
+     display:grid;
+     gird-template-columns:150px 1fr;
+ }
+ #article{
+      padding-left:25px;
+ @media(max-width:800px){
+   #grid{
+      display:block;
+    }
+    #grid ol{
+      border-right:none;
+    }
+    h1{
+      border-bottom:none;
+    }
+ }
+ </style>
+</head>
+
+<body>
+  <input type="button" value="day1" onclick="
+      document.querySelector('body').style.backgroundColor = 'white';
+      document.querySelector('body').style.color = 'black';
+    ">
+    <input type="button" value="day2" onclick="
+      document.querySelector('body').style.backgroundColor = 'ivory';
+      document.querySelector('body').style.color = 'black';
+    ">
+  <h1><a href=index.html>Do-do</a></h1>
+  <ol>
+    <li><a href=1.html class="saw">All Shop</a></li>
+    <li><a href=2.html class="saw">Accesory</a></li>
+    <li><a href=3.html class="saw" id="active">Donation</a></li>
+    <li><a href=4.html>Challenge</a></li>
+    <li><a href=5.html>My page</a></li>
+  </ol>
+    <div id="article">
+  <h1>Donation corps</h1>
+  <p><img src="different.jpg" width="25%">
+  <p style="margin-top:10px;"></p>
+
+  <h3> 1.유기동물 후원 단체 </h3>
+  </p>
+  <img src="1.jpg" width="53%">
+  <a style="margin-top:45px;">
+    <img src="2.png" width="40%">
+    <a style="margin-top:45px;">
+
+  <h3> 2. 복지 단체 </h3>
+  </p>
+    <img src="5.jpg" width="35%">
+    <a style="margin-top:45px;">
+  <img src="6.jpg" width="55%">
+  <a style="margin-top:45px;">
+
+  <h3> 3. 의료 단체 </h3>
+  </p>
+  <p><img src="7.jpg" width="45%">
+  <a style="margin-top:45px;">
+  <img src="9.png" width="45%">
+  <a style="margin-top:45px;"></p>
+
+회사들이 참 많죠?</p> 잘 선택해서 좋은 곳으로 기부해주세요~!</p> 추가적으로 궁금한 기부단체가 있으시면 문의주세요~!
+  </p>
+</body>
+</html>
